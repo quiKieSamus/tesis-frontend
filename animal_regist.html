@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Animal</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="formbody">
+    
+    <div class="top-img-container">
+        <img class="top-form-banner" src="media/joyful-6FYjNJiA_eE-unsplash.jpg">
+    </div>
+
+    <div class="animalform_container">
+
+    
+
+    <form action="submit" method="post" name="animal_form" class="formulario_animal">
+
+
+        <h1 class="formtitle">Registra tu Mascota</h1>
+
+         <div class="medium-width">
+            <div class="halfcontainer">
+               
+                    <label class="regis_formlabel">Nombre</label>
+                    <input type="text" name="name" id="animal_name" class="form_input">
+                
+            </div>
+            <div class="halfcontainer">
+                <label class="regis_formlabel">Especie</label>
+                <select name="breed" id="animal_breed" class="form_input">
+
+                    <option value="gato">Gato</option>
+                    <option value="perro">Perro</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="hamster">Hamster</option>
+
+                </select>
+            </div>
+
+         </div>
+        <label class="regis_formlabel">Descripcion</label>
+        <textarea name="description" rows="5" cols="50" id="regist_user" form="animal_form" class="form_input  messagebox"></textarea>
+        
+        <div class="medium-width">
+            <div class="halfcontainer">
+                <label class="regis_formlabel">¿Castrado?</label>
+                <div class="radio_container">
+                    <label for="castrated" class="radiolabel">Si<input type="radio" class="gender_input" name="gender" value="masculino"></label>
+                    
+                    <label for="notcastrated" class="radiolabel">No<input type="radio" class="gender_input" name="gender" value="femenino"></label>
+                </div>
+            </div>
+            <div class="halfcontainer">
+                <label class="regis_formlabel">Genero</label>
+                <div class="radio_container">
+                    <label for="maleradio" class="radiolabel">Macho<input type="radio" class="gender_input" name="genderanimal" value="macho"></label>
+                    
+                    <label for="femaleradio" class="radiolabel">Hembra<input type="radio" class="gender_input" name="genderanimal" value="hembra"></label>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        <label class="regis_formlabel">Edad</label>
+        <input type="number" name="animal_age" id="regist_password" class="form_input">
+
+        <label for="address" class="regis_formlabel">Raza</label>
+        <input type="text" name="breed" class="form_input">
+
+        <a class="registform_button hoverable">Registrar</a>
+    </form>
+
+
+
+</div>
+</body>
+</html>

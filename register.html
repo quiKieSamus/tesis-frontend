@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="formbody">
+
+<div class="registform_container">
+
+
+
+    <form action="submit" method="post" class="formulario_registro">
+
+
+        <h1 class="formtitle">Registrate</h1>
+
+         <div class="medium-width">
+            <div class="halfcontainer">
+               
+                    <label class="regis_formlabel">Nombre</label>
+                    <input type="text" name="name" id="regist_name" class="form_input">
+                
+            </div>
+            <div class="halfcontainer">
+                <label class="regis_formlabel">Apellido</label>
+                <input type="text" name="lastname" id="regist_lastname" class="form_input">
+            </div>
+
+         </div>
+        <label class="regis_formlabel">Usuario</label>
+        <input type="text" name="user" id="regist_user" class="form_input">
+        
+        <label class="regis_formlabel">Email</label>
+        <input type="text" name="mail" id="regist_mail" class="form_input">
+
+        <label class="regis_formlabel">Fecha de Nacimiento</label>
+        <input type="date" name="birth" id="regist_birth" class="form_input">
+
+        <label for="national_id" class="regis_formlabel">Cedula</label>
+        <input type="number" name="national_id" class="form_input">
+
+        <div class="medium-width">
+            <div class="halfcontainer">
+                <label class="regis_formlabel">Genero</label>
+                <div class="radio_container">
+                    <label for="maleradio" class="radiolabel">Masculino <input type="radio" class="gender_input" name="gender" value="masculino"></label>
+                    
+                    <label for="femaleradio" class="radiolabel">Femenino <input type="radio" class="gender_input" name="gender" value="femenino"></label>
+                </div>
+            </div>
+            <div class="halfcontainer">
+                <label class="regis_formlabel">Contraseña</label>
+                <input type="password" name="r_password" id="regist_password" class="form_input">
+            </div>
+        </div>
+
+         <label for="address" class="regis_formlabel">Direccion</label>
+        <input type="text" name="address" class="form_input">
+
+        <a class="registform_button hoverable">Registrar</a>
+    </form>
+
+
+
+</div>
+
+    
+</body>
+</html>
